@@ -37,14 +37,6 @@ struct queue *make_queue() {
     return q;
 }
 
-/*
-typedef struct queue_node {
-    void *item;
-    struct queue_node *next;
-    struct queue_node *prev;
-} queue_node_t;
- */
-
 void enqueue(struct queue *q, void *item) {
     // TODO: Add item to the queue and update necessary pointers
     pthread_mutex_lock(&q->queueMutex);
