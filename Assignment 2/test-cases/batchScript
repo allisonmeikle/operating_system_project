@@ -1,0 +1,2 @@
+echo shell
+exec P_quit RR30
